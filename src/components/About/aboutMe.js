@@ -1,6 +1,32 @@
 import React from "react";
+import { Navbar } from "react-bootstrap";
+import Wrapper from "../Wrapper/wrapper"
+import Container from "../Container/container"
+import Row from "../Row/row"
+import Column from "../Column/column"
 import "../About/style.css";
 import myImage from "../img/IMG_9882.jpg"
+import {useHistory} from "react-router-dom"
+
+
+const styles = {
+	img: {
+		width: "300px",
+		height: "300px",
+	},
+	aboutMe: {
+		color: "whitesmoke",
+		fontFamily: "Verdana, Geneva, Tahoma, sans-serif",
+		fontWeight: "bold",
+		fontSize: "14px",
+		border: "3px",
+		borderStyle: "solid",
+		borderColor: "white",
+		borderRadius: "4px",
+		backgroundColor: "rgba(0, 0, 0, 0.65)",
+		padding: "10px",
+	},
+};
 
 const AboutMe = () => {
     const history = useHistory()
