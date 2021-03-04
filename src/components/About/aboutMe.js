@@ -10,20 +10,27 @@ import {useHistory} from "react-router-dom"
 
 
 const styles = {
+	header: {
+		marginTop: "30px",
+	},
 	img: {
+		marginTop: "20px",
+  		marginLeft: "400px",
+  		marginRight: "400px",
 		width: "300px",
-		height: "300px",
+		height: "400px",
 	},
 	aboutMe: {
-		color: "whitesmoke",
-		fontFamily: "Verdana, Geneva, Tahoma, sans-serif",
-		fontWeight: "bold",
-		fontSize: "14px",
-		border: "3px",
+		marginLeft: "50px",
+		marginRight: "50px",
+		marginTop: "30px",
+		color: "white",
+		fontFamily: "Arial, Helvetica, sans-serif",
+		fontSize: "16px",
+		border: "5px",
 		borderStyle: "solid",
-		borderColor: "white",
 		borderRadius: "4px",
-		backgroundColor: "rgba(0, 0, 0, 0.65)",
+		backgroundColor: "darkolivegreen",
 		padding: "10px",
 	},
 };
@@ -38,14 +45,14 @@ const AboutMe = () => {
 		<Wrapper>
 			<Container>
 				<Row>
-					<Column size="md-6">
+					<Column size="md-12">
 						<div>
-							<h1>About Me:</h1>
+						<h1 style={styles.header} className='text-center' id='app'>About Me</h1>
 							<img style={styles.img} src={myImage} alt="me" />
 						</div>
 					</Column>
 					<Row>
-						<Column size="md-8">
+						<Column size="md-12">
 							<p style={styles.aboutMe}>
                             Hey, my name is Lea Wilhelmer and I am 21 years old. I'm from Tirol/Austria and I've been living in Los Gatos, California, since April 2019.
 								

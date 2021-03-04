@@ -6,23 +6,39 @@ import Resume from "../Resume/Lea's Resume.pdf"
 import Wrapper from "../Wrapper/wrapper";
 import Container from "../Container/container"
 
+const styles = {
+	contact: {
+		marginTop: "40px",
+		marginBottom: "20px",
+	},
+
+	links: {
+		textAlign: "center",
+		marginRight: "90px",
+		marginLeft: "90px"
+	}
+}
+
 const Contact = () => {
 
     return (
 		<Wrapper>
-				<Container>
+			<Container>
 						<h1 className='text-center' id='app'>Contact Me</h1>
-					<Row>
-						<Column size="md-8">
+						<Row>
+						<Column size="md-12">
+							<div style={styles.contact}>
 							<p>
                             Phone Number: +1(408) 596-6644
 							</p>
 							<p>
                             Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=leawilhelmer@gmail.com">leawilhelmer@gmail.com</a>
 							</p>
-
+							</div>
+							<div style={styles.links}>
 							<Row>
 							<Column size="md-4">
+							
 								<a
 									href={Resume}
 									download=""
@@ -52,10 +68,11 @@ const Contact = () => {
 								</a>
 							</Column>
 						</Row>
-
+						</div>
 						</Column>
 					</Row>
-				</Container>
+					
+			</Container>
 		</Wrapper>
 
     )
