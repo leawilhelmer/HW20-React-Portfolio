@@ -6,13 +6,14 @@ import Wrapper from "../Wrapper/wrapper";
 import Container from "../Container/container";
 import Row from "../Row/row";
 import Column from "../Column/column";
+import Card from "../Card/card"
 
 const Application = () => {
 	return (
     
 		<Wrapper>
 			<Container>
-                <h1 className='text-center' id='app'>Applications</h1>
+                <h1 className='text-center' id='app'>My Projects</h1>
                 <Row>
                     <Column size='md-6'>
                         <Card

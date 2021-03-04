@@ -3,21 +3,22 @@ import "../Contact/style.css";
 import Row from "../Row/row";
 import Column from "../Column/column";
 import Resume from "../Resume/Lea's Resume.pdf"
+import Wrapper from "../Wrapper/wrapper";
+import Container from "../Container/container"
 
 const Contact = () => {
 
     return (
-				<Row>
-					<Column size="md-6">
-						<div>
-							<h1>Contact Me</h1>
-						</div>
-					</Column>
+		<Wrapper>
+				<Container>
+						<h1 className='text-center' id='app'>Contact Me</h1>
 					<Row>
 						<Column size="md-8">
 							<p>
-                            Phone Number: +1 (408) 596-6644
-                            Email:<a href="https://mail.google.com/mail/?view=cm&fs=1&to=leawilhelmer@gmail.com">leawilhelmer@gmail.com</a>
+                            Phone Number: +1(408) 596-6644
+							</p>
+							<p>
+                            Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=leawilhelmer@gmail.com">leawilhelmer@gmail.com</a>
 							</p>
 
 							<Row>
@@ -54,7 +55,8 @@ const Contact = () => {
 
 						</Column>
 					</Row>
-				</Row>
+				</Container>
+		</Wrapper>
 
     )
 }
