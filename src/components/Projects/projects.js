@@ -1,7 +1,11 @@
 import React from "react";
 import "../Projects/style.css";
-import Project2 from "../img/Screenshot (56).png"
-import NoteTaker from "../img/Screenshot 2021-02-04 100650.png"
+import Project2 from "../img/Screenshot (56).png";
+import NoteTaker from "../img/Screenshot 2021-02-04 100650.png";
+import Wrapper from "../Wrapper/wrapper";
+import Container from "../Container/container";
+import Row from "../Row/row";
+import Column from "../Column/column";
 
 const Application = () => {
 	return (
