@@ -4,7 +4,6 @@ import Wrapper from "../Wrapper/wrapper"
 import Container from "../Container/container"
 import Row from "../Row/row"
 import Column from "../Column/column"
-import "../About/style.css";
 import myImage from "../img/IMG_9882.jpg"
 import {useHistory} from "react-router-dom"
 
@@ -30,7 +29,7 @@ const styles = {
 		border: "5px",
 		borderStyle: "solid",
 		borderRadius: "4px",
-		backgroundColor: "darkolivegreen",
+		backgroundColor: "#531200",
 		padding: "10px",
 	},
 };
