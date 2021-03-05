@@ -16,7 +16,7 @@ const styles = {
 	img: {
 		marginTop: "20px",
   		marginLeft: "400px",
-  		marginRight: "400px",
+  		marginRight: "600px",
 		width: "300px",
 		height: "400px",
 	},
@@ -59,11 +59,6 @@ const AboutMe = () => {
 								.<br></br>I am currently working as an Au Pair (Nanny) and I am also doing a Coding Bootcamp at UC Berkeley Extension. I will be a Full-Stack Web Developer by the end of March and I am hoping I will get a Job as a Web Developer right after. When I'm not coding, I am going for hikes or walks. I also enjoy skiing because I am a ski instructror.
 								<br></br>
 								
-								<p onClick={handleClick}>Check out my{" "}
-									<highlight style={{ color: "orangered", textDecoration: "underline" }}>
-										Portfolio
-									</highlight>
-								</p>
 							</p>
 						</Column>
 					</Row>
