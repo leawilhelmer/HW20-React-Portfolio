@@ -4,18 +4,24 @@ import Row from "../Row/row";
 import Column from "../Column/column";
 import Resume from "../Resume/Lea's Resume.pdf"
 import Wrapper from "../Wrapper/wrapper";
-import Container from "../Container/container"
+import Container from "../Container/container";
+import Footer from "../Footer/footer";
 
 const styles = {
+
+	head: {
+		marginTop: "20%"
+	},
+
 	contact: {
-		marginTop: "40px",
+		marginTop: "30px",
 		marginBottom: "20px",
 	},
 
 	links: {
 		textAlign: "center",
-		marginRight: "90px",
-		marginLeft: "90px"
+		marginRight: "50px",
+		marginLeft: "50px"
 	}
 }
 
@@ -24,7 +30,9 @@ const Contact = () => {
     return (
 		<Wrapper>
 			<Container>
+			<div style={styles.head}>
 						<h1 className='text-center' id='app'>Contact Me</h1>
+					</div>
 						<Row>
 						<Column size="md-12">
 							<div style={styles.contact}>
@@ -74,7 +82,6 @@ const Contact = () => {
 					
 			</Container>
 		</Wrapper>
-
     )
 }
 
